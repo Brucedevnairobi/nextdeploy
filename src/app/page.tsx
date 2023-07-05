@@ -6,7 +6,7 @@ export default function Home() {
     <main className="bg-white px-10">
       <section className="h-screen ">
         <nav className="py-10 mb-1">
-          <h1>Bruce /></h1>
+          <h1 className='font-bold'><code>Bruce</code></h1>
         </nav>
         <div className="text-center">
           <h2 className='text-4xl py-2 text-teal-700 font-medium'>OBruce Simiyu</h2>
