@@ -43,7 +43,7 @@ export default function Home() {
           Here is my technology toolbelt:
            </h1> 
         <ul className="text-sm mx-auto text-center">
-          <li className="">
+         
               <li className="py-1 my-2">
                   <span className="bg-blue-600 rounded p-1 mx-2">JavaScript</span>
                   <span className="bg-blue-600 rounded p-1 mx-2">Ruby</span>
@@ -65,7 +65,7 @@ export default function Home() {
                   <span className="bg-blue-600 rounded p-1 mx-2">Git/GitHub</span>
                   <span className="bg-blue-600 rounded p-1 mx-2">RESTful API</span><br />
               </li>
-          </li>
+     
         </ul>   
         
 
