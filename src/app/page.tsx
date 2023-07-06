@@ -39,7 +39,7 @@ export default function Home() {
           I focus primarily on delivering clean code that is easy to maintain and scale using Test Driven Development. <br /><br />
           Additionally, I specialize in creating concise, detailed and accurate documents that helps developers comprehend
           even the most complex systems and topics. I have experience in creating user manuals, software documents, and technical reports.<br /><br />
-          Away from work, when the screens go off, I extend my creativity continues to flow as a quadbike speed junkie, and a cueist. <br /><br />
+          Away from work, when the screens go off, My creativity continues to flow as a cueist and quadbike speed junkie. <br /><br />
           Here is my technology toolbelt:
            </h1> 
         <ul className="text-sm mx-auto text-center">
