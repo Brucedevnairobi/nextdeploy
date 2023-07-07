@@ -1,14 +1,20 @@
+'use client'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/image"
 import profile from "../../public/profile.jpg"
+import { ThemeProvider, useTheme } from "next-themes";
+ 
+
 
 export default function Home() {
+  const { theme, setTheme } = useTheme();
   return (
+  <ThemeProvider attribute="class">  
    <div>
-    <main className="bg-black text-white px-10">
+    <main className="bg-white text-black px-10">
       <section className="h-screen ">
         <nav className="py-4 mb-1">
-          <h1 className="font-bold"><code>Bruce</code></h1>
+          <h1 className="font-bold">OBruce</h1>
         </nav>
         <div className="text-center">
           <h2 className="text-4xl py-2 text-teal-700 font-medium">OBruce Simiyu</h2>
@@ -65,19 +71,16 @@ export default function Home() {
                   <span className="bg-blue-600 rounded p-1 mx-2">Git/GitHub</span>
                   <span className="bg-blue-600 rounded p-1 mx-2">RESTful API</span><br />
               </li>
-     
         </ul>   
-        
-
       </section>
-      <footer className="">
-        <div className="flex text-sm list-none gap-1">
-            <li>Dark |</li>
-            <li>Light</li>
-        </div>
-      </footer>
+    <span className="cursor-pointer">
+        <span onClick={()=>setTheme("Light")}>Light</span> | {" "}
+        <span onClick={()=>setTheme("Dark")}>Dark</span> | ({theme})
+
+    </span>
     </main>
    </div> 
+   </ThemeProvider>
 
   )
 }
